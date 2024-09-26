@@ -26,22 +26,29 @@
   font-style: normal;
 }
 
-.outfit-400 {
-  font-family: "Outfit", sans-serif;
+.work-sans-800 {
+  font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
 }
+
 
 /* grid grid-cols-6 grid-rows-4 gap-5 */
 @layer base {
 
   html,
   body {
-    @apply w-screen h-screen bg-zinc-900 text-neutral-100 flex justify-center
+    @apply w-screen h-screen bg-neutral-950 text-neutral-100 flex justify-center
   }
 
   main {
     @apply relative grid grid-cols-12 grid-rows-6 gap-5 w-screen h-full p-5
+  }
+}
+
+@layer components {
+  .external-link {
+    @apply border-b h-1/3 border-amber-500 text-amber-500 px-8 py-2 flex items-center
   }
 }
